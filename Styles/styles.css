@@ -8,16 +8,20 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items:  center;
 }
 
 .container{
     background-color: #FFFFFF;
     width: 870px;
     padding: 30px;
+    margin-top: 21px;
+    border-radius: 5px;
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
 }
 .top-player{
     margin-bottom: 30px;
@@ -54,6 +58,19 @@ hr{
     margin-left: 16px;
     font-size: 18px ;
 }
+
+/* ------------------------
+      top blogs part
+------------------------ */
+.top-blogs{ 
+    /* margin-top: 27px; */
+}
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 26px;
+}
 .blog{
     display: flex;
 }
@@ -77,4 +94,24 @@ hr{
     text-decoration: none;
     font-size: 16px;
     color: #562EFF;
+}
+
+/*----------------------------------- 
+       latest course parts
+-------------------------------- */
+.courses{
+    display: flex;
+}
+.course{
+    margin-right: 53px;
+}
+.course-image img{
+    width: 224px;
+    height: 104px;
+    
+}
+
+.latest-course-author-name{
+    color: #ED6B4F;
+    font-size: 14.6913px;
 }
