@@ -99,19 +99,90 @@ hr{
 /*----------------------------------- 
        latest course parts
 -------------------------------- */
+#latest-course-name{
+    margin-left: 20px;
+   
+}
 .courses{
-    display: flex;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
 }
 .course{
-    margin-right: 53px;
+    width: 252.42px;
+height: 269.79px;
+box-shadow: 15px 15px 40px whitesmoke;
+
+
 }
 .course-image img{
     width: 224px;
     height: 104px;
+    margin-left: 15px;
     
+}
+.course-details{
+    margin-left: 15px;
 }
 
 .latest-course-author-name{
     color: #ED6B4F;
     font-size: 14.6913px;
+}
+
+.course-schedule{
+    display: flex;
+    justify-content: space-between;
+}
+.colour-star{
+    color: #FFC014;
+    font-size: 12px;
+}
+.empty-star{
+    color: #AEAEAE;
+    font-size: 12px;
+}
+.ratings{
+    color: #A2A2A2;
+    font-size: 12px;
+}
+
+.time-clock{
+    color: #FF4A60;
+    font-size: 16px;
+    width: 94.83px;
+    height: 29.38px;
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    font-weight: 600;
+    margin-right: 10px;
+   
+    
+}
+.fa-clock{
+    padding: 5px;
+}
+
+/* ----------------------
+      Media Queries 
+-----------------------*/
+
+/* -----------------------
+         Mobile Devices 
+-------------------------*/
+
+@media only screen and (max-width:688px) {
+  
+        .players{
+            grid-template-columns: repeat(1,1fr);
+            justify-content: ;
+        }
+    .container{
+        width: 100%;
+    }
+    
+    .player{
+        align-items: center;
+    }
+   
 }
